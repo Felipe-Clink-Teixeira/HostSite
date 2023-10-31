@@ -1,0 +1,132 @@
+﻿@model Interesse
+@{
+    ViewData["Title"] = "Hotsite";
+}
+
+
+<div class="container">
+    <main class="row">
+        <div class="col-5">
+            <h1>Iniciativa Saúde da Cidade</h1>
+            <p>
+                Texto sobre vida saudável: Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.
+            </p>
+            <p>
+                Texto sobre vida iniciativa: Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.
+            </p>
+        </div>
+         <div class="col-7">
+            <img src="imgs\saude.jpeg" alt="Saude pública" style="width: 107%;
+    height: 86%;}">
+         </div>
+        <div class="col-5 form">
+            <h2>Entre em contato!:</h2>
+            <p>Nos mande uma mensagem e fique por dentro de nossos eventos</p>
+    
+            <form  method="POST" id="formulario" >
+                <div>
+                    <label asp-for="Nome" >Nome:    </label>
+                    <input asp-for="Nome" id="nome" class="border border-success p-2 mb-2 border-opacity-25  entrada"/>
+                </div>
+                <div>
+                    <label asp-for="Email" >Email:   </label>
+                    <input  id="email" class="border border-success p-2 mb-2 border-opacity-25 entrada"/>
+                </div>
+                <div>
+                    <label asp-for="Mensagem" >Mensagem<br>(opcional):</label>
+                    <textarea asp-for="Mensagem" id="mensagem" class="border border-success p-2 mb-2 border-opacity-25 entrada"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar" id="botao">
+                    
+                </div>
+            </form>
+        </div>
+    
+        <div class="col-7 row">
+            <a href="#" class="col-4">
+                <img src="imgs\agenda.png" alt="Agenda" data-bs-toggle="modal" data-bs-target="#agenda">
+                Agenda de eventos
+            </a>
+            <a href="#" class="col-4" data-bs-toggle="modal" data-bs-target="#dicas">
+                <img src="imgs\frutas.jpeg" alt="Frutas">
+                Dicas de vida saudável
+            </a>
+            <a href="#" class="col-4">
+                <img src="imgs\colaboradores.jpeg" alt="Colaboradores" data-bs-toggle="modal" data-bs-target="#Colaboradores">
+                Apoiadores
+    
+            </a>
+        
+
+                  
+
+            <!-- Modal -->
+            <div class="modal fade" id="agenda" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Dicas Saudáveis</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                        <div class="modal-body">
+                            <h5>25/10/23 - Evento de coleta de sangue</h5> <br>
+                             Lorem ipsum dolor sit amet consectetur adipisicing elit. M, adipisci dolorum labore similique perferendis ad consequatur tempora. <br>
+                            <h5>30/10/23 - Evento de exames de IST</h5> <br>
+                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum obcaecati repudiandae adipisci <br>
+                            <h5>09/11/23 - Palestra de conscientização sobre higiene</h5> <br>
+                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus inventore quisquam incidunt <br>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="modal fade" id="dicas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Dicas Saudáveis</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Coma frutas :) <br>
+                                Faça exercícios :) <br>
+                                Faça uma consulta de rotina :) <br>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal fade" id="Colaboradores" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Dicas Saudáveis</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div>
+                                    <img src="imgs\colab-1.jpeg" alt="Colaboradores 1">
+                                    <span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus perspiciatis us ipsam vero nisi, minima iusto unde ad!</span>
+                                </div>
+                                <div>
+                                    <img src="imgs\colab-2.jpeg" alt="Colaboradores 2">
+                                    <span> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat eius dolorem quis ! Ipsum amet ipsa provident totam autem!</span>
+                                </div>
+                                <div>
+                                    <img src="imgs\colab-3.jpeg" alt="Colaboradores 3">
+                                    <span> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat eius dolorem quis ! Ipsum amet ipsa provident totam autem!</span>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+
+            
+      
+
+    </main>
+</div>
