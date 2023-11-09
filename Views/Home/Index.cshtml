@@ -33,7 +33,7 @@
                     <input  id="email" class="border border-success p-2 mb-2 border-opacity-25 entrada"/>
                 </div>
                 <div>
-                    <label asp-for="Mensagem" >Mensagem<br>(opcional):</label>
+                    <label asp-for="Mensagem" >Mensagem:</label>
                     <textarea asp-for="Mensagem" id="mensagem" class="border border-success p-2 mb-2 border-opacity-25 entrada"></textarea>
                 </div>
                 <div>
@@ -44,70 +44,72 @@
         </div>
     
         <div class="col-7 row">
-            <a href="#" class="col-4">
-                <img src="imgs\agenda.png" alt="Agenda" data-bs-toggle="modal" data-bs-target="#agenda">
+            <a href="#" class="col-4" >
+                <img style="max-width: 110%;" src="imgs\agenda.png" alt="Agenda" data-toggle="modal" data-target="#agenda" >
                 Agenda de eventos
             </a>
-            <a href="#" class="col-4" data-bs-toggle="modal" data-bs-target="#dicas">
-                <img src="imgs\frutas.jpeg" alt="Frutas">
+            <a href="#" class="col-4" data-toggle="modal" data-target="#dicas">
+                <img style="max-width: 110%;" src="imgs\frutas.jpeg" alt="Frutas">
                 Dicas de vida saudável
             </a>
             <a href="#" class="col-4">
-                <img src="imgs\colaboradores.jpeg" alt="Colaboradores" data-bs-toggle="modal" data-bs-target="#Colaboradores">
+                <img style="max-width: 110%;" src="imgs\colaboradores.jpeg" alt="Colaboradores" data-toggle="modal" data-target="#colaboradores">
                 Apoiadores
     
             </a>
-        
-
-                  
-
-            <!-- Modal -->
-            <div class="modal fade" id="agenda" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Dicas Saudáveis</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                        <div class="modal-body">
-                            <h5>25/10/23 - Evento de coleta de sangue</h5> <br>
+        </div>
+        <div class="modal fade" id="agenda" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Agenda</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                       <h5>25/10/23 - Evento de coleta de sangue</h5> <br>
                              Lorem ipsum dolor sit amet consectetur adipisicing elit. M, adipisci dolorum labore similique perferendis ad consequatur tempora. <br>
                             <h5>30/10/23 - Evento de exames de IST</h5> <br>
                              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum obcaecati repudiandae adipisci <br>
                             <h5>09/11/23 - Palestra de conscientização sobre higiene</h5> <br>
                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus inventore quisquam incidunt <br>
 
-                        </div>
                     </div>
+
                 </div>
             </div>
-
-
-            <div class="modal fade" id="dicas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Dicas Saudáveis</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                Coma frutas :) <br>
-                                Faça exercícios :) <br>
-                                Faça uma consulta de rotina :) <br>
-                            </div>
+        </div>
+        <div class="modal fade" id="dicas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Dicas saudáveis</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
+                    <div class="modal-body">
+                      
+                             Coma frutas  <br>
+                                Faça exercícios  <br>
+                                Faça uma consulta de rotina  <br>
+                    </div>
+
                 </div>
             </div>
-            
-            <div class="modal fade" id="Colaboradores" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Dicas Saudáveis</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div>
+        </div>
+        <div class="modal fade" id="colaboradores" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Dicas saudáveis</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div>
                                     <img src="imgs\colab-1.jpeg" alt="Colaboradores 1">
                                     <span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus perspiciatis us ipsam vero nisi, minima iusto unde ad!</span>
                                 </div>
@@ -119,12 +121,16 @@
                                     <img src="imgs\colab-3.jpeg" alt="Colaboradores 3">
                                     <span> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat eius dolorem quis ! Ipsum amet ipsa provident totam autem!</span>
                                 </div>
-                            </div>
                     </div>
+
                 </div>
             </div>
+        </div>
 
+                  
 
+            
+          
             
       
 

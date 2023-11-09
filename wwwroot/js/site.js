@@ -15,7 +15,7 @@
 
 function Cadastrar()
 {
-   let variaveis = {
+   var variaveis = {
         Nome: $("#nome").val(),
         Email: $("#email").val(),
         Mensagem: $("#mensagem").val(),
